@@ -1,0 +1,202 @@
+{
+    "FileType": "HillTau",
+    "Version": "1.0",
+    "Comment": "Conc units are uM, time units are seconds",
+    "quantityUnits": "uM",
+    "Description": "NOS Signaling",
+    "Groups": {
+        "Calmodulin_Kinase": {
+            "Species": {
+                "NMDAR": 2.398,
+                "Glu": 100.04751,
+                "CaM": 25.14,
+                "CaMKII": 30.922
+            },
+            "Reacs": {
+                "Ca": {
+                    "tau": 0.00413781306719482,
+                    "tau2": 0.3444377743972025,
+                    "KA": 0.5178,
+                    "Kmod": 0.004113,
+                    "Amod": 0.0012872760739762697,
+                    "Nmod": 1,
+                    "baseline": 0.08,
+                    "subs": [
+                        "NMDAR",
+                        "aPKG",
+                        "Glu"
+                    ]
+                },
+                "aCaM": {
+                    "tau": 1.06046359452962143,
+                    "tau2": 50.94771162906439,
+                    "KA": 0.8406,
+                    "subs": [
+                        "CaM",
+                        "Ca",
+                        "Ca",
+                        "Ca",
+                        "Ca"
+                    ]
+                },
+                "aCaMKII": {
+                    "tau": 8.7641589213745862,
+                    "tau2": 62.89521479599709,
+                    "KA": 1.655,
+                    "subs": [
+                        "CaMKII",
+                        "aCaM"
+                    ]
+                }
+            }
+        },
+       "Nitric_Oxide": {
+            "Species": {
+                "LAr": 1.012,
+                "nNOS": 0.5211
+            },
+            "Reacs": {
+                "anNOS": {
+                    "tau": 25.622116643111323,
+                    "tau2": 1.96191836095565,
+                    "KA": 5.8,
+                    "subs": [
+                        "nNOS",
+                        "aCaMKII"
+                    ]
+                },
+                "NO": {
+                    "tau": 2.182728595297579,
+                    "tau2": 0.17223294963797253,
+                    "KA": 6.679,
+                    "subs": [
+                        "LAr",
+                        "anNOS"
+                    ]
+                }
+            }
+        },
+        "DNA_Repair": {
+            "Species": {
+                "O2R": 1.92,
+                "PARP": 29.12
+            },
+            "Reacs": {
+                "ONOO": {
+                    "tau": 0.2948742467320272,
+                    "tau2": 0.4559488527037928,
+                    "KA": 0.0318,
+                    "subs": [
+                        "NO",
+                        "O2R"
+                    ]
+                },
+                "aPARP": {
+                    "tau": 6.288981025956473,
+                    "tau2": 1.6260837015054874,
+                    "KA": 516.8,
+                    "subs": [
+                        "PARP",
+                        "ONOO"
+                    ]
+                }
+            }
+        },
+        "Apoptosis": {
+            "Species": {
+                "GAPDH": 0.3304,
+                "GOSPEL": 1.024,
+                "Siah": 17.41,
+                "HDAC2": 0.04216
+            },
+            "Reacs": {
+                "SNO_GAPDH": {
+                    "tau": 1.644645774542151,
+                    "tau2": 0.014735355831108719,
+                    "KA": 2.506,
+                    "subs": [
+                        "GAPDH",
+                        "NO"
+                    ]
+                },
+                "SNO_GOSPEL": {
+                    "tau": 11.394955788220626,
+                    "tau2": 0.07449767136873503,
+                    "KA": 0.03199,
+                    "subs": [
+                        "GOSPEL",
+                        "NO"
+                    ]
+                },
+                "Siah_SNO_GAPDH": {
+                    "tau": 0.023410906497216277,
+                    "tau2": 0.06295900639338493,
+                    "KA": 3.527e-06,
+                    "Kmod": 3.483e-06,
+                    "Amod": 3.3495101718099945e-09,
+                    "Nmod": 1,
+                    "subs": [
+                        "Siah",
+                        "SNO_GOSPEL",
+                        "SNO_GAPDH"
+                    ]
+                },
+                "SSG_HDAC2": {
+                    "tau": 7.277930914792966,
+                    "tau2": 0.021633553667449828,
+                    "KA": 9.609,
+                    "inhibit": 1,
+                    "subs": [
+                        "HDAC2",
+                        "Siah_SNO_GAPDH"
+                    ]
+                }
+            }
+        },
+        "HC_Neurogenesis": {
+            "Species": {
+                "sGC": 15.4071,
+                "GTP": 203.6,
+                "PKG": 0.4601,
+                "CREB": 0.3334
+            },
+            "Reacs": {
+                "asGC": {
+                    "tau": 30.14336472278832,
+                    "KA": 0.08382,
+                    "subs": [
+                        "sGC",
+                        "NO"
+                    ]
+                },
+                "cGMP": {
+                    "tau": 3.5784436799153037,
+                    "tau2": 300.5784436799153037,
+                    "KA": 20.648,
+                    "subs": [
+                        "GTP",
+                        "asGC"
+                    ]
+                },
+                "aPKG": {
+                    "tau": 100.7705436184440146,
+                    "tau2": 0.2516905775579384,
+                    "KA": 0.3578,
+                    "subs": [
+                        "PKG",
+                        "cGMP"
+                    ]
+                },
+                "pCREB": {
+                    "tau": 10.8383051962282133,
+                    "tau2": 0.028160727726506773,
+                    "KA": 0.1027,
+                    "subs": [
+                        "CREB",
+                        "aPKG"
+                    ]
+                }
+            }
+        }
+    }
+}
