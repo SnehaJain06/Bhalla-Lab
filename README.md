@@ -1,5 +1,6 @@
 # Bhalla-Lab
-Modelling Nitric Oxide Signalling Pathways: All the files created during the summer internship period
+Modelling Nitric Oxide Signalling Pathways: The files created during the summer internship period
+
 About the internship: It was a 6-month project (Jan-March online and May-June offline) under the mentorship of Prof. Upinder Singh Bhalla (NCBS), where I learnt to use the Python scripts and packages developed by the lab to model the role of Nitric Oxide in production and regulation of different signalling cascades responsible for various functions like neurogenesis, DNA damage repair and cell apoptosis.
 
 This repository contains the following:
