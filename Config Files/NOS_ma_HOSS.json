@@ -1,0 +1,133 @@
+{
+        "FileType":"Hoss",
+        "Version":"1.0", 
+	"author": "Sneha Jain",
+	"model": "/home/snehajain/projectwork/Internship/Moose/NOS.g",
+	"map":"/home/snehajain/projectwork/Internship/Map/NOS_ma_map.json",
+	"exptDir": "/home/snehajain/projectwork/Internship/Moose/Experiments",
+	"scoreFunc": "NRMS",
+	"algorithm": "COBYLA",
+	"tolerance": 0.01,
+	"comment": "HOSS1 is individual pathway opts.",
+
+	"HOSS": [
+		{
+			"name": "IndividualPathways", 
+			"hierarchyLevel": 1,
+
+			"Ca_g": {
+
+				"comment": "Each block can be optimized independently in ||",
+				"expt": { 
+					"Idrissi1999_fig2B.json": {"weight": 98},
+					"Beggiato2018_fig1A.json": {"weight": 95},
+					"Perrella2005_fig6A.json": {"weight": 95},
+					"Perrella2005_fig6B.json": {"weight": 92},
+					"Schapansky2009_fig1A.json": {"weight": 95},
+					"Nonaka1998_fig3A.json": {"weight": 100},
+					"Idrissi1999_fig2A.json": {"weight": 98},
+					"Benavides1988_fig4.json": {"weight": 100},
+					"Chung2004_fig3A.json": {"weight": 100},
+					"Doolen2012_fig3B.json": {"weight": 100}			        				
+					},
+				"params": ["Glu_bindNMDAR.Kd", "Glu_bindNMDAR.tau", "Ca_influx.Kd", "Ca_influx.tau"],
+				"resultFile": "/home/snehajain/projectwork/Internship/Optimisation/Ca_g.txt",
+				"optModelFile": "/home/snehajain/projectwork/Internship/Optimisation/Ca_g.g"
+				},
+			
+			"CaM_g": {
+
+				"comment": "Each block can be optimized independently in ||",
+				"expt": { 
+					"Shifman2006_fig1B.json": {"weight": 42},
+					"Valeyev2008_fig8.json": {"weight": 66},
+					"Bayer2002_fig4A.json": {"weight": 73}			        				
+					},
+				"params": ["CaM_bindCa.Kd", "CaM_bindCa.tau", "CaM_Ca_bindCa.Kd","CaM_Ca_bindCa.tau", "CaM_Ca2_bindCa.Kd", "CaM_Ca2_bindCa.tau", "CaM_Ca3_bindCa.Kd", "CaM_Ca3_bindCa.tau"],
+				"resultFile": "/home/snehajain/projectwork/Internship/Optimisation/CaM_g.txt",
+				"optModelFile": "/home/snehajain/projectwork/Internship/Optimisation/CaM_g.g"
+				},
+				
+			"CaMKII_g": {
+
+				"comment": "Each block can be optimized independently in ||",
+				"expt": { 
+					"Forest2008_fig1.json": {"weight": 43},
+					"Shifman2006_fig4C.json": {"weight": 42},
+					"Shifman2006_fig4D.json": {"weight": 42},
+					"Fukunaga1992_fig2A.json": {"weight": 95},
+					"Chang2019_fig1B.json": {"weight": 31},
+					"Mariamoutou2018_fig13.json": {"weight": 100}
+					},
+				"params": ["tot_CaMKII_CaM_p.Km", "tot_CaMKII_CaM_p.kcat", "tot_CaMKII_CaM_p_p_p.Km", "tot_CaMKII_CaM_p_p_p.kcat", "tot_auto_CaMKII_p_p_p.Km", "tot_auto_CaMKII_p_p_p.kcat","tot_auto_CaMKII_p.Km", "tot_auto_CaMKII_p.kcat", "CaMKII_thr286_p_CaM.Km", "CaMKII_thr286_p_CaM.kcat", "CaMCa4_bindCaMKII.Kd", "CaMCa4_bindCaMKII.tau", "CaMKII_to_thr286.Kd", "CaMKII_to_thr286.tau", "CaM_totCaMKII.Kd", "CaM_totCaMKII.tau", "auto_CaMKII_p3.Kd", "auto_CaMKII_p3.tau", "CaMCa4_bindCaMKIIthr286.Kd", "CaMCa4_bindCaMKIIthr286.tau"],
+				"resultFile": "/home/snehajain/projectwork/Internship/Optimisation/CaMKII_g.txt",
+				"optModelFile": "/home/snehajain/projectwork/Internship/Optimisation/CaMKII_g.g"
+				},
+				
+			"NO_g": {
+				"comment": "Each block can be optimized independently in ||",
+				"expt": {
+					"Greif2004_fig7.json": {"weight": 67},
+					"Lee1998_fig2.json": {"weight": 83},
+					"Koriauli2014_fig2.json": {"weight": 100},
+					"Radomski1990_tab1.json": {"weight": 82},
+					"Suschek2003_fig3A.json": {"weight": 86},
+					"Joshi2007_fig2A.json": {"weight": 82}
+					},
+				"params": ["anNOS_LAr.Km", "anNOS_LAr.kcat", "anNOS_LCit.Km", "anNOS_LCit.kcat"],
+				"resultFile": "/home/snehajain/projectwork/Internship/Optimisation/NO_g.txt",
+				"optModelFile": "/home/snehajain/projectwork/Internship/Optimisation/NO_g.g"
+				},
+				
+			"HN_g": {
+				"comment": "Each block can be optimized independently in ||",
+				"expt": {
+					"Knowles1989_fig2A.json": {"weight": 100},
+					"Zabel2002_fig1D.json": {"weight": 88},
+					"Abrams1991_fig2.json": {"weight": 69},
+					"Jurdo2003_fig3B.json": {"weight": 100},
+					"Wykes2002_fig1.json": {"weight": 80},
+					"Sunahara1998_fig6B.json": {"weight": 87},
+					"Fujiwara2014_fig3C.json": {"weight": 78},
+					"Mabuchi2001_fig4.json": {"weight": 96},
+					"Socodato2008_fig1A.json": {"weight": 69},
+					"Socodato2008_fig1B.json": {"weight": 66},
+					"Fujiwara2014_fig3D.json": {"weight": 78}
+					
+					},
+				"params": ["NO_bindsGC_fast.Kd", "NO_bindsGC_fast.tau", "NO_bindsGC_slow.Kd", "NO_bindsGC_slow.tau", "form_6coord.Kd", "form_6coord.tau", "act_sGC_fast.Kd", "act_sGC_fast.tau", "act_sGC_slow.Kd", "act_sGC_slow.tau", "cGMP_bindPKG.Kd", "cGMP_bindPKG.tau", "cGMP2_form.Kd", "cGMP2_form.tau", "cGMP_PDEform.Kd", "cGMP_PDEform.tau", "NO_GC.Km", "NO_GC.kcat", "PDE.Km", "PDE.kcat", "cGMP_PKG_CREB.Km", "cGMP_PKG_CREB.kcat", "cGMP_PKG_PDE.Km", "cGMP_PKG_PDE.kcat", "cGMP_PDE_p.Km", "cGMP_PDE_p.kcat", "Myo_phosphatase.Km", "Myo_phosphatase.kcat", "cGMP_PDE.Km", "cGMP_PDE.kcat"],
+				"resultFile": "/home/snehajain/projectwork/Internship/Optimisation/HN_g.txt",
+				"optModelFile": "/home/snehajain/projectwork/Internship/Optimisation/HN_g.g"
+				},	
+
+			"DR_g": {
+				"comment": "Each block can be optimized independently in ||",
+				"expt": {
+					"Mathews2008_fig1A.json": {"weight": 65},
+					"Szabo2001_fig2C.json": {"weight": 86},
+					"Alano2010_fig3B.json": {"weight": 94},
+					"Meng2018_fig1C.json": {"weight": 80},
+					"Gomez2014_fig1.json": {"weight": 79},
+					"Alano2010_fig3E.json": {"weight": 94},
+					"Deeksha2021_fig6A.json": {"weight": 79},
+					"Hernandez2007_fig5I.json": {"weight": 80},
+					"Andrabi2006_fig2B.json": {"weight": 91}
+					},
+				"params": ["radical_NO.Kd", "radical_NO.tau", "anion_NO.Kd", "anion_NO.tau", "NO_RbindO2R.Kd", "NO_RbindO2R.tau", "NO_nbindO2.Kd", "NO_nbindO2.tau", "ONOO.Km", "ONOO.kcat", "aPARP_PARpol.Km", "aPARP_PARpol.kcat", "aPARP_ADPpol.Km", "aPARP_ADPpol.kcat", "Nicotinamide_form.Kd", "Nicotinamide_form.tau", "Nicotinamide_dis.Kd", "Nicotinamide_dis.tau", "PAR_pol.Km", "PAR_pol.kcat", "MIF_bindAIF.Kd", "MIF_bindAIF.tau"],
+				"resultFile": "/home/snehajain/projectwork/Internship/Optimisation/DR_g.txt",
+				"optModelFile": "/home/snehajain/projectwork/Internship/Optimisation/DR_g.g"
+				},
+
+			"Ap_g": {
+				"comment": "Each block can be optimized independently in ||",
+				"expt": {
+					"Sen2009_fig3A.json": {"weight": 88},
+					"Watson2009_fig1A.json": {"weight": 95}
+					},
+				"params": ["NO_bindGAPDH.Kd", "NO_bindGAPDH.tau", "NO_bindGOSPEL.Kd", "NO_bindGOSPEL.tau", "Siah_bindSNOGAPDH.Kd", "Siah_bindSNOGAPDH.tau", "SNOGOSPEL_bindSNOGAPDH.Kd", "SNOGOSPEL_bindSNOGAPDH.tau", "SNOGOSPEL_inh_SSG.Kd", "SNOGOSPEL_inh_SSG.tau", "SSG.Km", "SSG.kcat"],
+				"resultFile": "/home/snehajain/projectwork/Internship/Optimisation/Ap_g.txt",
+				"optModelFile": "/home/snehajain/projectwork/Internship/Optimisation/Ap_g.g"
+				}			
+		}
+	]
+}

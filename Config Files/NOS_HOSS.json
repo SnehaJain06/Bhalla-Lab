@@ -1,0 +1,95 @@
+{
+        "FileType":"Hoss",
+        "Version":"1.0", 
+	"author": "Sneha Jain",
+	"model": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+	"map":"/home/snehajain/projectwork/Internship/Map/NOS_map.json",
+	"exptDir": "/home/snehajain/projectwork/Internship/Experiments",
+	"scoreFunc": "NRMS",
+	"algorithm": "COBYLA",
+	"tolerance": 0.0001,
+	"comment": "HOSS1 is individual pathway opts.",
+
+	"HOSS": [
+		{
+			"name": "IndividualPathways", 
+			"hierarchyLevel": 1,
+
+			"Calmodulin_Kinase": {
+
+				"comment": "Each block can be optimized independently in ||",
+				"expt": { 
+					"Chang2019_fig1B.json": {"weight": 31},
+					"Schapansky2009_fig1A.json": {"weight": 94},
+					"Fukunaga1992_fig2A.json": {"weight": 98},
+					"Mariamoutou2018_fig13.json": {"weight": 100}
+					},
+				"params": ["NMDAR.concInit", "Glu.concInit", "CaM.concInit", "CaMKII.concInit", "Ca.tau", "Ca.tau2", "Ca.KA", "Ca.Kmod", "Ca.Amod", "aCaM.tau", "aCaM.tau2", "aCaM.KA", "aCaMKII.tau", "aCaMKII.tau2", "aCaMKII.KA"],
+				"paramBounds": {
+				               "Ca.Amod": [0.00001,0.05,0]
+				},
+				"resultFile": "/home/snehajain/projectwork/Internship/Optimisation/Calmodulin_Kinase.txt",
+				"optModelFile": "/home/snehajain/projectwork/Internship/Optimisation/Calmodulin_Kinase.json"
+				},
+			
+			"Nitric_Oxide": {
+				"comment": "Each block can be optimized independently in ||",
+				"expt": {
+					"Greif2004_fig7.json": {"weight": 67},
+					"Lee1998_fig2.json": {"weight": 85},
+					"Radomski1990_tab1.json": {"weight": 82},
+					"Suschek2003_fig3A.json": {"weight": 86},
+					"Joshi2007_fig2A.json": {"weight": 82},
+ 					"Koriauli2014_fig2.json": {"weight": 100}
+					},
+				"params": ["LAr.concInit", "nNOS.concInit", "anNOS.tau", "anNOS.tau2", "anNOS.KA", "NO.tau", "NO.tau2", "NO.KA"],
+				"resultFile": "/home/snehajain/projectwork/Internship/Optimisation/Nitric_Oxide.txt",
+				"optModelFile": "/home/snehajain/projectwork/Internship/Optimisation/Nitric_Oxide.json"
+				},
+
+			"DNA_Repair": {
+				"comment": "Each block can be optimized independently in ||",
+				"expt": {
+					"Szabo2001_fig2C.json": {"weight": 92},
+					"Mathews2008_fig1A.json": {"weight": 77}
+					},
+				"params": ["O2R.concInit", "PARP.concInit", "ONOO.tau", "ONOO.tau2", "ONOO.KA", "aPARP.tau", "aPARP.tau2", "aPARP.KA"],
+				"resultFile": "/home/snehajain/projectwork/Internship/Optimisation/DNA_Repair.txt",
+				"optModelFile": "/home/snehajain/projectwork/Internship/Optimisation/DNA_Repair.json"
+				},
+
+			"Apoptosis": {
+				"comment": "Each block can be optimized independently in ||",
+				"expt": {
+					"Sen2009_fig3A.json": {"weight": 85},
+					"Watson2009_fig1A.json": {"weight": 97}
+					},
+				"params": ["GAPDH.concInit", "GOSPEL.concInit", "Siah.concInit", "HDAC2.concInit", "SNO_GAPDH.tau", "SNO_GAPDH.tau2", "SNO_GAPDH.KA", "SNO_GOSPEL.tau", "SNO_GOSPEL.tau2", "SNO_GOSPEL.KA", "Siah_SNO_GAPDH.tau", "Siah_SNO_GAPDH.tau2", "Siah_SNO_GAPDH.KA", "Siah_SNO_GAPDH.Kmod", "Siah_SNO_GAPDH.Amod", "SSG_HDAC2.tau", "SSG_HDAC2.tau2", "SSG_HDAC2.KA"],
+				"resultFile": "/home/snehajain/projectwork/Internship/Optimisation/Apoptosis.txt",
+				"optModelFile": "/home/snehajain/projectwork/Internship/Optimisation/Apoptosis.json"
+				},
+
+			"HC_Neurogenesis": {
+				"comment": "Each block can be optimized independently in ||",
+				"expt": {
+					"Sunahara1998_fig6B.json": {"weight": 87},
+					"Jurdo2003_fig3B.json": {"weight": 100},
+					"Wykes2002_fig1.json": {"weight": 80},
+					"Fujiwara2014_fig3C.json": {"weight": 78},
+					"Fujiwara2014_fig3D.json": {"weight": 78},
+					"Knowles1989_fig2A.json": {"weight": 100},
+					"Mabuchi2001_fig4.json": {"weight": 96},
+					"Socodato2008_fig1A.json": {"weight": 69},
+					"Socodato2008_fig1B.json": {"weight": 65},
+					"Palumbo2001_fig6A.json": {"weight": 65},
+					"Palumbo2001_fig6B.json": {"weight": 65},
+					"Palumbo2001_fig6C.json": {"weight": 65},
+					"Zabel2002_fig1D.json": {"weight": 98}
+					},
+				"params": ["sGC.concInit", "GTP.concInit", "PKG.concInit", "CREB.concInit", "asGC.tau", "asGC.tau2", "asGC.KA", "cGMP.tau", "cGMP.KA", "aPKG.tau", "aPKG.tau2", "aPKG.KA", "pCREB.tau", "pCREB.tau2", "pCREB.KA"],
+				"resultFile": "/home/snehajain/projectwork/Internship/Optimisation/HC_Neurogenesis.txt",
+				"optModelFile": "/home/snehajain/projectwork/Internship/Optimisation/HC_Neurogenesis.json"
+				}			
+		}
+	]
+}
