@@ -1,0 +1,80 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 17535904,
+            "authors": "Mahesh S. Joshi, T. Bruce Ferguson, Fruzsina K. Johnson",
+            "journal": "PNAS",
+            "year": 2007,
+            "figure": "Figure 2A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Human",
+        "cellType": "HUVECs",
+        "notes": "Dose-dependent activation of cellular NO synthesis by L-Arginine "
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "LAr"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1800,
+        "quantityUnits": "uM",
+        "entities": [
+            "NO"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 1800,
+            "entities": [
+                "NO"
+            ],
+            "dose": 10000,
+            "sampling": "dose"
+        },
+        "display": {
+        "useXlog": true,
+        "useYlog": false
+        },
+        
+        "data": [
+           [
+             200,
+             0.2857,
+             0
+           ],
+           [
+             1000,
+             0.377,
+             0
+           ],
+           [
+             5000,
+             0.704,
+             0
+           ],
+           [
+             10000,
+             1.0,
+             0
+           ]  
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

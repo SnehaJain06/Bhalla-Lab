@@ -1,0 +1,96 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 12742995,
+            "authors": "Christoph V. Suschek, Oliver Schnorr, Karsten Hemmrich ",
+            "journal": "Circulation",
+            "year": 2003,
+            "figure": "Figure 3A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "cellType": "Aorta Endothelial Cells",
+        "notes": "Role of arginine availability on iNOS at different arginine concentrations and nitrite concentrations were determined in culture supernatants to measure activity in cytokine-activated cultures. After cytokine challenge, the increases in NO formation were strongly dependent on exogenous arginine concentrations."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "LAr"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1800,
+        "quantityUnits": "ratio",
+        "entities": [
+            "NO"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 1800,
+            "entities": [
+                "NO"
+            ],
+            "dose": 800.0,
+            "sampling": "dose"
+        },
+        "data": [
+           
+           [
+             0.0001,
+             0.0,
+             0
+           ],
+           [
+             30.0,
+             0.0752,
+             0
+           ],
+           [
+             60.0,
+             0.2983,
+             0
+           ],
+           [
+             75.0,
+             0.499,
+             0
+           ],
+           [
+             90.0,
+             0.673,
+             0
+           ],
+           [
+             100.0,
+             0.848,
+             0
+           ],
+           [
+             370.0,
+             0.945,
+             0
+           ],
+           [
+             800.0,
+             1.0,
+             0
+           ]  
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

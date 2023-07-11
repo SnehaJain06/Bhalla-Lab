@@ -1,0 +1,75 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 20181594,
+            "authors": "Conrad C. Alano, Philippe Garnier, Weihai Ying",
+            "journal": "J Neurosci",
+            "year": 2010,
+            "figure": "Figure 3E"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Human",
+        "cellType": "Astrocytes cells",
+        "notes": "Effects of NAD+ on PARP-1-induced neuronal death"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "NAD"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "Poly_ADP_Ribosy"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 600,
+            "entities": [
+                "Poly_ADP_Ribosy"
+            ],
+            "dose": 1.0,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             1.0,
+             1.0,
+             0
+           ],
+           [
+             1000.0,
+             0.548,
+             0
+           ],
+           [
+             5000.0,
+             0.48,
+             0
+           ],
+           [
+             10000.0,
+             0.40,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

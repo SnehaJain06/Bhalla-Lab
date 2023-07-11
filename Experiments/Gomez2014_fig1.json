@@ -1,0 +1,75 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 25504347,
+            "authors": "Dominguez Gomez, Diaz Chavez, Chavez Blanco",
+            "journal": "Oncology Reports",
+            "year": 2014,
+            "figure": "Figure 1"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Human",
+        "cellType": "Breast cancer cells",
+        "notes": " Endogenous inhibition of PARP by Nicotinamide NAM"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Nicotinamide"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 3600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "Poly_ADP_Ribosy"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 3600,
+            "entities": [
+                "Poly_ADP_Ribosy"
+            ],
+            "dose": 0.01,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.01,
+             1.0,
+             0
+           ],
+           [
+             500.0,
+             0.50,
+             0
+           ],
+           [
+             750.0,
+             0.55,
+             0
+           ],
+           [
+             1000.0,
+             0.30,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

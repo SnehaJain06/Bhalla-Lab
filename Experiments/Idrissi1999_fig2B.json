@@ -1,0 +1,84 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10531449,
+            "authors": "A El Idrissi, E Trenkner",
+            "journal": "JNeurosci",
+            "year": 1999,
+            "figure": "Figure 2B"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Mice",
+        "cellType": "Cerebellar granule neuron",
+        "notes": " Calcium accumulation as a function of glutamate receptor activation"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "NMDA"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1800,
+        "quantityUnits": "ratio",
+        "entities": [
+            "Ca"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 1800,
+            "entities": [
+                "Ca"
+            ],
+            "dose": 1000.0,
+            "sampling": "dose"
+        },
+        "display": {
+        "useXlog": true,
+        "useYlog": false
+        },
+        "data": [
+           [
+             0.1,
+             0.2675,
+             0
+           ],
+           [
+             1.0,
+             0.2625,
+             0
+           ],
+           [
+             10.0,
+             0.28,
+             0
+           ],
+           [
+             100.0,
+             0.91,
+             0
+           ],
+           [
+             1000.0,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

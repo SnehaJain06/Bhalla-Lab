@@ -1,0 +1,99 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9765272,
+            "authors": "Shiow-Ju Lee, James T Stull",
+            "journal": "Journal of Biological Chemistry",
+            "year": 1998,
+            "figure": "Figure 2"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Mice",
+        "cellType": "COS-7 cells",
+        "notes": "Activity of neuronal nitric oxide synthase on different Calcium concentrations"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Ca"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 3600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "anNOS_par"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 3600,
+            "entities": [
+                "anNOS_par"
+            ],
+            "dose": 1.000,
+            "sampling": "dose"
+        },
+        "display":{
+        "useXlog": true,
+        "useYlog": false
+        },
+        "data": [
+           [
+             0.035,
+             0.00135,
+             0
+           ],
+           [
+             0.112,
+             0.00137,
+             0
+           ],
+           [
+             0.145,
+             0.00155,
+             0
+           ],
+           [
+            0.178,
+             0.07313,
+             0
+           ],
+           [
+             0.182,
+             0.22797,
+             0
+           ],
+           [
+             0.195,
+             0.43964,
+             0
+           ],
+           [
+             0.197,
+             0.98285,
+             0
+           ],
+           [
+             1.000,
+             1.00,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 18239155,
+            "authors": "Marlene T Mathews, Bradford C Berk",
+            "journal": "Arteriosclerosis, Thrombosis, and Vascular Biology",
+            "year": 2008,
+            "figure": "Figure 1A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Human",
+        "cellType": "HUVECs- Human Umbilical Vein Epithelial Cells",
+        "notes": "Peroxynitrite induced PARP activation in HUVECs cells"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "ONOOpar"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1800,
+        "quantityUnits": "ratio",
+        "entities": [
+            "aPARP_par"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 1800,
+            "entities": [
+                "aPARP_par"
+            ],
+            "dose": 400.0,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             100.0,
+             0.25,
+             0
+           ],
+           [
+             200.0,
+             0.5,
+             0
+           ],
+           [
+             300.0,
+             0.75,
+             0
+           ],
+           [
+             400.0,
+             1.0,
+             0
+           ] 
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+            ]   
+  }
+}

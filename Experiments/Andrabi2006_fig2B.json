@@ -1,0 +1,75 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 17116882,
+            "authors": "Shaida A. Andrabi, No Soo Kim, Seong-Woon Yu",
+            "journal": "Proc Natl Acad Sci",
+            "year": 2006,
+            "figure": "Figure 2B"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Human",
+        "cellType": "Primary cortical neuron cells",
+        "notes": "PAR polymer toxicity is length- and dose-dependent and caspase-independent for polymer length of 60 mers"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "PAR_pol_par"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 3600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "MIF_AIF"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 3600,
+            "entities": [
+                "MIF_AIF"
+            ],
+            "dose": 0.16,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.02,
+             0.35,
+             0
+           ],
+           [
+             0.04,
+             0.55,
+             0
+           ],
+           [
+             0.08,
+             0.85,
+             0
+           ],
+           [
+             0.16,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

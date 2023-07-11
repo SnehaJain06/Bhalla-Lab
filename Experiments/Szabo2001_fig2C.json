@@ -1,0 +1,70 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 11442752,
+            "authors": "E Szabo, L Virag, E Bakondi",
+            "journal": "J Invest Dermatol",
+            "year": 2001,
+            "figure": "Figure 2C"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Mice",
+        "cellType": "HaCaT cells - keratinocyte",
+        "notes": "Peroxynitrite induced PARP activation in HaCaT cells"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "ONOOpar"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1800,
+        "quantityUnits": "ratio",
+        "entities": [
+            "aPARP_par"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 1800,
+            "entities": [
+                "aPARP_par"
+            ],
+            "dose": 200.0,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             200.0,
+             1.000,
+             0
+           ],
+           [
+             400.0,
+             1.571,
+             0
+           ],
+           [
+             800.0,
+             1.857,
+             0
+           ] 
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

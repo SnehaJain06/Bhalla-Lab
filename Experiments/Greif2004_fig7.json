@@ -1,0 +1,80 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 14736917,
+            "authors": "Daniel M. Greif, David B. Sacks, and Thomas Michel",
+            "journal": "PNAS",
+            "year": 2004,
+            "figure": "Figure 7"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Bovine cell culture",
+        "cellType": "Endothelial cells",
+        "notes": "Activity of eNOS in different dose of Calcium"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Ca"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 900,
+        "quantityUnits": "ratio",
+        "entities": [
+            "anNOS_par"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 900,
+            "entities": [
+                "anNOS_par"
+            ],
+            "dose": 0.80,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.15,
+             0.115,
+             0
+           ],
+           [
+             0.25,
+             0.332,
+             0
+           ],
+           [
+             0.35,
+             0.426,
+             0
+           ],
+           [
+             0.50,
+             0.793,
+             0
+           ],
+           [
+             0.80,
+             1.00,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

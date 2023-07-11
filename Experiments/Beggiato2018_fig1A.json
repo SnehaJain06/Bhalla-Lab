@@ -1,0 +1,84 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 29674969,
+            "authors": "Sarah Beggiato, Andrea C. Borelli, Maria C. Tomasini, M. Paola Castelli",
+            "journal": "Front Pharmacol",
+            "year": 2018,
+            "figure": "Figure 1A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "cellType": "Cortical astrocytes cells",
+        "notes": "Glutamate receptor agonist concentration-response curves"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Glu"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 120,
+        "quantityUnits": "ratio",
+        "entities": [
+            "Ca"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 120,
+            "entities": [
+                "Ca"
+            ],
+            "dose": 100.0,
+            "sampling": "dose"
+        },
+        "display": {
+        "useXlog": true,
+        "useYlog": false
+        },
+        "data": [
+           [
+             0.01,
+             0.0,
+             0
+           ],
+           [
+             0.1,
+             0.02,
+             0
+           ],
+           [
+             1.0,
+             0.10,
+             0
+           ],
+           [
+             10.0,
+             0.70,
+             0
+           ],
+           [
+             100.0,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

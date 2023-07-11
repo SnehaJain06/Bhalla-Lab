@@ -1,0 +1,85 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 12358727,
+            "authors": "Victoria Wykes, Tomas C. Bellamy, John Garthwaite",
+            "journal": "J Neurochem ",
+            "year": 2002,
+            "figure": "Figure 1"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "cellType": "Striatal cells",
+        "notes": "Concentration-cGMP response curve for DEA/NO in striatal cell suspensions. The cells were exposed to the NO donor for 30s in the presence of 1 mM IBMX"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "NO"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 30,
+        "quantityUnits": "ratio",
+        "entities": [
+            "NO_GCpar"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 30,
+            "entities": [
+                "NO_GCpar"
+            ],
+            "dose": 1.0,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.01,
+             0.091,
+             0
+           ],
+           [
+             0.05,
+             0.190,
+             0
+           ],
+           [
+             0.1,
+             0.404,
+             0
+           ],
+           [
+             0.6,
+             0.842,
+             0
+           ],
+           [
+             1.0,
+             1.000,
+             0
+           ],
+           [
+             5.0,
+             0.856,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

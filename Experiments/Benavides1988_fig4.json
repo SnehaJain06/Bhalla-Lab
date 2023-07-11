@@ -1,0 +1,84 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 2903912,
+            "authors": "J. Benavides, Y. Claustre, and B. Scatton",
+            "journal": "JNeurosci",
+            "year": 1988,
+            "figure": "Figure 4"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "cellType": "Hippocampal neuron",
+        "notes": " Effects of L-Glutamate on synaptomeurosomal [Ca2+]i in the immature rat brain"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Glu"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1800,
+        "quantityUnits": "ratio",
+        "entities": [
+            "Ca"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 1800,
+            "entities": [
+                "Ca"
+            ],
+            "dose": 100,
+            "sampling": "dose"
+        },
+        "display": {
+        "useXlog": true,
+        "useYlog": false
+        },
+        "data": [
+           [
+             0.1,
+             0.018,
+             0
+           ],
+           [
+             1.0,
+             0.325,
+             0
+           ],
+           [
+             10.0,
+             0.84,
+             0
+           ],
+           [
+             100.0,
+             1.0,
+             0
+           ],
+           [
+             1000.0,
+             0.937,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 713099,
+            "authors": "Sopiko Koriauli, Tamar Barbakadze, Nino Natsvlishvili",
+            "journal": "J. Biomedical Science and Engineering ",
+            "year": 2014,
+            "figure": "Figure 2"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Mice",
+        "cellType": "Synaptoneurosome",
+        "notes": "Glutamate-dependent production of nitric oxide in synaptoneurosomes"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Glu"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1800,
+        "quantityUnits": "ratio",
+        "entities": [
+            "NO"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 1800,
+            "entities": [
+                "NO"
+            ],
+            "dose": 100.0,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.01,
+             0.464,
+             0
+           ],
+           [
+             10.0,
+             0.554,
+             0
+           ],
+           [
+             50.0,
+             0.908,
+             0
+           ],
+           [
+             100.0,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

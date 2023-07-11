@@ -1,0 +1,90 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 11717354,
+            "authors": "T Mabuchi, K Kitagawa, K Kuwabara",
+            "journal": "JNeurosci ",
+            "year": 2001,
+            "figure": "Figure 4"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "cellType": "Hippocampal neural cells",
+        "notes": "CREB (cAMP) phosphorylation induced by exposure to glutamate in cultured neurons"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Glu",
+            "data": [
+                [
+                    0.1,
+                    100
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entities": [
+            "pCREB"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 600,
+            "entities": [
+                "pCREB"
+            ],
+            "dose": 0,
+            "sampling": "presetTime"
+        },
+        "data": [
+           [
+             0.1,
+             0.309,
+             0
+           ],
+           [
+             60.0,
+             0.565,
+             0
+           ],
+           [
+             120.0,
+             0.746,
+             0
+           ],
+           [
+             300.0,
+             0.988,
+             0
+           ],
+           [
+             600.0,
+             1.000,
+             0
+           ],
+           [
+             900.0,
+             0.664,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

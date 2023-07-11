@@ -1,0 +1,103 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 19607794,
+            "authors": "Nilkantha Sen, Makoto R. Hara, Abdullah S. Ahmed ",
+            "journal": "Neuron",
+            "year": 2009,
+            "figure": "Figure 3A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Mice",
+        "cellType": "HEK293 cells",
+        "notes": "Inhibition of binding between S-nitrosylated GAPDH (SNOGAPDH) and Siah by the addition of purified GOSPEL in a concentration-dependent manner. SNO-GOSPEL potently inhibits binding of SNO-GAPDH and Siah with an IC50 of about 10 nM"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "SNOGOSPEL"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1800,
+        "quantityUnits": "ratio",
+        "entities": [
+            "SSG_par"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 1800,
+            "entities": [
+                "SSG_par"
+            ],
+            "dose": 0.0001,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.0001,
+             1.0,
+             0
+           ],
+           [
+             0.005,
+             0.931,
+             0
+           ],
+           [
+             0.0075,
+             0.857,
+             0
+           ],
+           [
+             0.01,
+             0.482,
+             0
+           ],
+           [
+             0.0125,
+             0.302,
+             0
+           ],
+           [
+             0.015,
+             0.167,
+             0
+           ],
+           [
+             0.020,
+             0.083,
+             0
+           ],  
+           [
+             0.025,
+             0.062,
+             0
+           ],
+           [
+             0.030,
+             0.029,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ],
+        "itemsToDelete": [
+            "SNO_GOSPEL"
+            ]
+  }
+}

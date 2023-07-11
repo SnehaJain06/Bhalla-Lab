@@ -1,0 +1,94 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 12799420,
+            "authors": "Sandra Jurado, Jose Sanchez-Prieto, Magdalena Torres",
+            "journal": "J Cell Sci ",
+            "year": 2003,
+            "figure": "Figure 3B"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "cellType": "Granule cells",
+        "notes": "Concentration change of cGMP accumulation in the cerebellar granule cells on exposure to 1uM DEA/NO"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "NO",
+            "data": [
+                [
+                    0.01,
+                    2000.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entities": [
+            "cGMP"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 600.0,
+            "entities": [
+                "cGMP"
+            ],
+            "sampling": "presetTime"
+        },
+        "data": [
+           [
+             0.01,
+             0.034,
+             0
+           ],
+           [
+             60.0,
+             0.630,
+             0
+           ],
+           [
+             150.0,
+             0.799,
+             0
+           ],
+           [
+             300.0,
+             0.969,
+             0
+           ],
+           [
+             600.0,
+             1.0,
+             0
+           ],
+           [
+             900.0,
+             0.928,
+             0
+           ],
+           [
+             1800.0,
+             0.559,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

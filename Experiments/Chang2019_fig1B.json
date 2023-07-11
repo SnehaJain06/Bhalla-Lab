@@ -1,0 +1,75 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 31239443,
+            "authors": "Jui Yun Chang, YOshihisa Nakahata, Yuki Hayano",
+            "journal": "Nature Communications ",
+            "year": 2019,
+            "figure": "Figure 1B"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "NA",
+        "cellType": "Cell-free",
+        "notes": "Activation of CaMKII from CaM stimulus"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "CaM"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "CaMKII_thr286_p_CaMpar"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 600,
+            "entities": [
+                "CaMKII_thr286_p_CaMpar"
+            ],
+            "dose": 0.03,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.03,
+             1.0,
+             0
+           ],
+           [
+             0.1,
+             3.00,
+             0
+           ],
+           [
+             0.3,
+             12.5,
+             0
+           ],
+           [
+             1.0,
+             14.00,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 2567995,
+            "authors": "R G Knowles, M Palacios, R M Palmer, S Moncada",
+            "journal": "Proc Natl Acad Sci U S A",
+            "year": 1989,
+            "figure": "Figure 2A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "cellType": "forebrain cells",
+        "notes": "Guanylate cyclase stimulation on different concentrations of free Calcium ions."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Ca"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "NO_GCpar"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 600,
+            "entities": [
+                "NO_GCpar"
+            ],
+            "dose": 1.50,
+            "sampling": "dose"
+        },
+        "display": {
+        "useXlog": true,
+        "useYlog": false
+        },
+        "data": [
+           [
+             0.01,
+             0.025,
+             0
+           ],
+           [
+             0.1,
+             0.023,
+             0
+           ],
+           [
+             0.125,
+             0.281,
+             0
+           ],
+           [
+             0.175,
+             0.361,
+             0
+           ],
+           [
+             0.43,
+             0.982,
+             0
+           ],
+           [
+             1.50,
+             1.00,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10461919,
+            "authors": "Anna Palumbo, Anna Di Cosmo, Annarita Poli, Carlo Di Cristo, Marco D'Ischia",
+            "journal": "Journal of Neurochemistry",
+            "year": 2001,
+            "figure": "Figure 6b"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Sepia officinalis",
+        "cellType": "Neurons",
+        "notes": "Time course of formation of cyclic GMP in Sepia brains"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "NO",
+            "data": [
+                [
+                    0.1,
+                    1500
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entities": [
+            "cGMP"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 60,
+            "entities": [
+                "cGMP"
+            ],
+            "dose": 0,
+            "sampling": "presetTime"
+        },
+        "data": [
+           [
+             0.1,
+             0.109,
+             0
+           ],
+           [
+             30.0,
+             0.807,
+             0
+           ],
+           [
+             60.0,
+             1.000,
+             0
+           ],
+           [
+             180.0,
+             0.781,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

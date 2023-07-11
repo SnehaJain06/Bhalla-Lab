@@ -1,0 +1,74 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 16966599 ,
+            "authors": "Julia M. Shifman, Mee H. Choi, Stefan Mihalas",
+            "journal": "Biochemistry",
+            "year": 2006,
+            "figure": "Figure 4C"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "E.coli",
+        "cellType": "cell-type",
+        "notes": " Activation of autophosphorylation of CaMKII by WT Ca"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Ca"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 60,
+        "quantityUnits": "ratio",
+        "entities": [
+            "tot_auto_CaMKIIpar"
+        ],
+        "field": "conc",
+        "normalization": {
+            "entities": [
+                "tot_auto_CaMKIIpar"
+            ],
+            "dose": 10.0,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.01,
+             0.0,
+             0
+           ],
+           [
+             1.0,
+             0.4,
+             0
+           ],
+           [
+             5.0,
+             0.8,
+             0
+           ],
+           [
+             10.0,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

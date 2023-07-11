@@ -1,0 +1,80 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 1358879,
+            "authors": "Kohji Fukunaga, Thomas R. Soderling, and Eishichi Miyamoto",
+            "journal": "J Biol Chem",
+            "year": 1992,
+            "figure": "Figure 2A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "cellType": "Hippocampal Neuron",
+        "notes": "Activation of CaMKII by stimulation of Glutamate"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Glu",
+            "data": [
+                [
+                    0.1,
+                    10
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entities": [
+            "CaMKII_thr286_p_CaMpar"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 300,
+            "entities": [
+                "CaMKII_thr286_p_CaMpar"
+            ],
+            "dose": 0,
+            "sampling": "presetTime"
+        },
+        "data": [
+           [
+             0.1,
+             0.122,
+             0
+           ],
+           [
+             15.0,
+             0.911,
+             0
+           ],
+           [
+             30.0,
+             0.916,
+             0
+           ],
+           [
+             300.0,
+             1.000,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

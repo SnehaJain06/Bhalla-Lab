@@ -1,0 +1,81 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15882473 ,
+            "authors": "Joel Perrella, Bhagu R Bhavnani",
+            "journal": "BMC Neurosci",
+            "year": 2005,
+            "figure": "Figure 6B"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "cellType": "Primary cortical cells",
+        "notes": " Initial peak [Ca2+]i change measured at 15 secs post glutamate injection"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Glu"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 15,
+        "quantityUnits": "ratio",
+        "entities": [
+            "Ca"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 15,
+            "entities": [
+                "Ca"
+            ],
+            "dose": 10.0,
+            "sampling": "dose"
+        },
+        
+        "data": [
+           [
+             0.1,
+             0.06,
+             0
+           ],
+           [
+             0.5,
+             0.34,
+             0
+           ],
+           [
+             1.0,
+             0.45,
+             0
+           ],
+           [
+             5.0,
+             0.60,
+             0
+           ],
+           [
+             10.0,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

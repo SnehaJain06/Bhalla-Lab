@@ -1,0 +1,71 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 1695013,
+            "authors": "M. W. Radomski, R. M. J. Palmer, S. Moncada",
+            "journal": "PNAS",
+            "year": 1990,
+            "figure": "Table 1"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Human",
+        "cellType": "Platelets",
+        "notes": "Effect of Ca2+ on NO synthesis by platelet cytosol "
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Ca"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 900,
+        "quantityUnits": "ratio",
+        "entities": [
+            "NO"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 900,
+            "entities": [
+                "NO"
+            ],
+            "dose": 0.3,
+            "sampling": "dose"
+        },
+        "data": [
+           
+           [
+             0.03,
+             0.0,
+             0
+           ],
+           [
+             0.10,
+             0.20,
+             0
+           ],
+           [
+             0.30,
+             1.0,
+             0
+           ]  
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

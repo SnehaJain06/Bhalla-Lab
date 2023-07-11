@@ -1,0 +1,84 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 12110572,
+            "authors": "K.Ulrich Bayer, Paul De Koninck, and Howard Schulman",
+            "journal": "EMBO J",
+            "year": 2002,
+            "figure": "Figure 4A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Human",
+        "cellType": "COS-7 cells",
+        "notes": " Calmodulin concentration–response curves."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "CaM"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 60,
+        "quantityUnits": "ratio",
+        "entities": [
+            "CaM_Ca4"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 60,
+            "entities": [
+                "CaM_Ca4"
+            ],
+            "dose": 1.0,
+            "sampling": "dose"
+        },
+        "display": {
+        "useXlog": true,
+        "useYlog": false
+        },
+        "data": [
+           [
+             0.001,
+             0.0,
+             0
+           ],
+           [
+             0.01,
+             0.20,
+             0
+           ],
+           [
+             0.1,
+             0.80,
+             0
+           ],
+           [
+             1.0,
+             1.0,
+             0
+           ],
+           [
+             10.0,
+             0.97,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

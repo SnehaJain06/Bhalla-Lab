@@ -1,0 +1,79 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 1679120,
+            "authors": "T W Abrams, K A Karl, E R Kandel",
+            "journal": "J Neurosci",
+            "year": 1991,
+            "figure": "Figure 2"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Aplysia",
+        "cellType": "Neuron",
+        "notes": " GTP dependence of cyclase stimulation"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "GTP"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "NO_GCpar"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 600,
+            "entities": [
+                "NO_GCpar"
+            ],
+            "dose": 10.0,
+            "sampling": "dose"
+        },
+        "display": {
+        "useXlog": true,
+        "useYlog": false
+        },
+        "data": [
+           [
+             0.1,
+             0.50,
+             0
+           ],
+           [
+             1.0,
+             0.84,
+             0
+           ],
+           [
+             10.0,
+             1.00,
+             0
+           ],
+           [
+             100.0,
+             0.91,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

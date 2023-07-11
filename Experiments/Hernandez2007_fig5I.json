@@ -1,0 +1,80 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 17347665,
+            "authors": "J I Diaz-Hernandez, S Moncada, J P Bolaños",
+            "journal": "Cell Death and Differentiation",
+            "year": 2007,
+            "figure": "Figure 5I"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Human",
+        "cellType": "HEK293T cells",
+        "notes": "Transfection of primary neurons with pEXPRESS-PARP-1 revealed, after 24 h, a concentration-dependent increase in apoptotic death"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "aPARP_par"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1800,
+        "quantityUnits": "ratio",
+        "entities": [
+            "MIF_AIF"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 1800,
+            "entities": [
+                "MIF_AIF"
+            ],
+            "dose": 1.2,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.15,
+             0.42,
+             0
+           ],
+           [
+             0.3,
+             0.46,
+             0
+           ],
+           [
+             0.45,
+             0.53,
+             0
+           ],
+           [
+             0.6,
+             0.73,
+             0
+           ],
+           [
+             1.2,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

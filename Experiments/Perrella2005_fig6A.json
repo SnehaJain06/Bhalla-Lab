@@ -1,0 +1,105 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15882473 ,
+            "authors": "Joel Perrella, Bhagu R Bhavnani",
+            "journal": "BMC Neurosci",
+            "year": 2005,
+            "figure": "Figure 6A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "cellType": "Primary cortical cells",
+        "notes": "[Ca2+]i measurements were made every 15 secs. Following injection changes in [Ca2+]i were monitored for an additional 120 secs."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Glu",
+            "data": [
+                [
+                    0.0,
+                    10.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entities": [
+            "Ca"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 120.0,
+            "entities": [
+                "Ca"
+            ],
+            "dose": 0.0,
+            "sampling": "presetTime"
+        },
+        "data": [
+           [
+             0.0,
+             0.0,
+             0
+           ],
+           [
+             15.0,
+             0.82,
+             0
+           ],
+           [
+             30.0,
+             0.80,
+             0
+           ],
+           [
+             45.0,
+             0.842,
+             0
+           ],
+           [
+             60.0,
+             0.87,
+             0
+           ],
+           [
+             75.0,
+             0.90,
+             0
+           ],
+           [
+             90.0,
+             0.94,
+             0
+           ],
+           [
+             105.0,
+             0.96,
+             0
+           ],
+           [
+             120.0,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

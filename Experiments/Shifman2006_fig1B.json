@@ -1,0 +1,85 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 16966599 ,
+            "authors": "Julia M. Shifman, Mee H. Choi, Stefan Mihalas",
+            "journal": "Biochemistry",
+            "year": 2006,
+            "figure": "Figure 1B"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "E.coli",
+        "cellType": "cell-type",
+        "notes": "Cooperative binding of Ca2+ to CaM in the presence of CaMKII."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Ca"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 60,
+        "quantityUnits": "ratio",
+        "entities": [
+            "CaM_Ca4"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 60,
+            "entities": [
+                "CaM_Ca4"
+            ],
+            "dose": 50.0,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.0,
+             0.0,
+             0
+           ],
+           [
+             10.0,
+             0.51,
+             0
+           ],
+           [
+             20.0,
+             0.77,
+             0
+           ],
+           [
+             30.0,
+             0.91,
+             0
+           ],
+           [
+             40.0,
+             0.97,
+             0
+           ],
+           [
+             50.0,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

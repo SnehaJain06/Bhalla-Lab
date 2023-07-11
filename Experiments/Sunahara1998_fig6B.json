@@ -1,0 +1,85 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9632695,
+            "authors": "R K Sunahara, A Beuve, J J Tesmer, S R Sprang, D L Garbers, A G Gilman",
+            "journal": "Nature Communications ",
+            "year": 1998,
+            "figure": "Figure 6B"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "cellType": "COS7 cells",
+        "notes": "Guanylyl Cyclase activity from different GTP stimulus as a measure of cGMP produced"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "GTP"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 900,
+        "quantityUnits": "ratio",
+        "entities": [
+            "cGMP"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 900,
+            "entities": [
+                "cGMP"
+            ],
+            "dose": 2990.355,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             49.905,
+             0.105,
+             0
+           ],
+           [
+             131.009,
+             0.270,
+             0
+           ],
+           [
+             467.704,
+             0.674,
+             0
+           ],
+           [
+             973.403,
+             0.733,
+             0
+           ],
+           [
+             1466.096,
+             0.975,
+             0
+           ],
+           [
+             2990.355,
+             1.00,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

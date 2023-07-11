@@ -1,0 +1,80 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 19012740,
+            "authors": "Renato Esteves da Silva Socodato, Cristiane Rosa Magalhães, Roberto Paes-de-Carvalho",
+            "journal": "J Neurochem",
+            "year": 2008,
+            "figure": "Figure 1A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Leghorn Chicken",
+        "cellType": "Retinal neuron cells",
+        "notes": "Glutamate production of CREB (cAMP) phosphorylation"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Glu"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1500,
+        "quantityUnits": "ratio",
+        "entities": [
+            "pCREB"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 1500,
+            "entities": [
+                "pCREB"
+            ],
+            "dose": 250.0,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.0,
+             0.0,
+             0
+           ],
+           [
+             50.0,
+             0.689,
+             0
+           ],
+           [
+             100.0,
+             0.708,
+             0
+           ],
+           [
+             180.0,
+             0.750,
+             0
+           ],
+           [
+             250.0,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

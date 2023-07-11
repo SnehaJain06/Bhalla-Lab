@@ -1,0 +1,80 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 11887187,
+            "authors": "SoUlrike Zabel, Christoph Kleinschnitz, Phil Oh",
+            "journal": "Nat Cell Biol",
+            "year": 2002,
+            "figure": "Figure 1d"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "cellType": "Heart cells",
+        "notes": "Specific sGC activity in rat heart in response to NO (DEA-NO) "
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "NO"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "NO_GCpar"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 600,
+            "entities": [
+                "NO_GCpar"
+            ],
+            "dose": 10.0,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.01,
+             0.0,
+             0
+           ],
+           [
+             0.1,
+             0.054,
+             0
+           ],
+           [
+             1.0,
+             0.666,
+             0
+           ],
+           [
+             10.0,
+             1.0,
+             0
+           ],
+           [
+             100.0,
+             0.969,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

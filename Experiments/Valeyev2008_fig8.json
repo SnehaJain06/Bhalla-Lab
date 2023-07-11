@@ -1,0 +1,84 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 18518982,
+            "authors": "Najl V Valeyev, Declan G Bates, Pat Heslop-Harrison",
+            "journal": "BMC Syst Biol",
+            "year": 2008,
+            "figure": "Figure 8"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Bovine",
+        "cellType": "Testis cells",
+        "notes": "Dependence of Ca2+ binding to CaM in pH 6"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Ca"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 3600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "CaM_Ca4"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 3600,
+            "entities": [
+                "CaM_Ca4"
+            ],
+            "dose": 100.0,
+            "sampling": "dose"
+        },
+        "display": {
+        "useXlog": true,
+        "useYlog": false
+        },
+        "data": [
+           [
+             1.0,
+             0.1,
+             0
+           ],
+           [
+             5.0,
+             0.42,
+             0
+           ],
+           [
+             10.0,
+             0.81,
+             0
+           ],
+           [
+             50.0,
+             0.94,
+             0
+           ],
+           [
+             100.0,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

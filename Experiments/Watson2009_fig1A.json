@@ -1,0 +1,79 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 19704855,
+            "authors": "P Marc D Watson, Antonella Riccio",
+            "journal": "Communicative and Integrative Biology",
+            "year": 2009,
+            "figure": "Figure 1A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "cellType": "Embryonic cortical neuronal cells",
+        "notes": "Whole cell lysates were incubated with the NO donor GSNO to study the HDAC activity"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "NO"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 3600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "SSG_HDAC2"
+        ],
+        "field": "conc",
+        "normalization": {
+            "entities": [
+                "SSG_HDAC2"
+            ],
+            "dose": 0.01,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.01,
+             1.000,
+             0
+           ],
+           [
+             50.0,
+             0.851,
+             0
+           ],
+           [
+             100.0,
+             0.688,
+             0
+           ],
+           [
+             250.0,
+             0.666,
+             0
+           ],
+           [
+             500.0,
+             0.620,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15001426,
+            "authors": "Chung-Yu Li, Ting-Yu Chin, Sheau-Huei Chueh",
+            "journal": "JPhysiol-Cell Physiology",
+            "year": 2004,
+            "figure": "Figure 3A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Mice",
+        "cellType": "Cerebellar granule neuron",
+        "notes": " Calcium accumulation as a function of glutamate receptor activation"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Glu"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1200,
+        "quantityUnits": "ratio",
+        "entities": [
+            "Ca"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 1200,
+            "entities": [
+                "Ca"
+            ],
+            "dose": 100.0,
+            "sampling": "dose"
+        },
+        "display": {
+        "useXlog": true,
+        "useYlog": false
+        },
+        "data": [
+           [
+             0.1,
+             0.0,
+             0
+           ],
+           [
+             1.0,
+             0.02,
+             0
+           ],
+           [
+             10.0,
+             0.3,
+             0
+           ],
+           [
+             100.0,
+             1.0,
+             0
+           ],
+           [
+             1000.0,
+             0.94,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

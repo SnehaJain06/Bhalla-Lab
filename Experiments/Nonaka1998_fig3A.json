@@ -1,0 +1,85 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9482940,
+            "authors": "Shigeyuki Nonaka, Christopher J. Hough, and De-Maw Chuang",
+            "journal": "PNAS ",
+            "year": 1998,
+            "figure": "Figure 3A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "cellType": "Cerebellar granule neuron cell",
+        "notes": "Time course of basal and glutamate-induced Ca2+ influx"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Glu",
+            "data": [
+                [
+                    0.0,
+                    100.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entities": [
+            "Ca"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 600.0,
+            "entities": [
+                "Ca"
+            ],
+            "dose": 0.0,
+            "sampling": "presetTime"
+        },
+        "data": [
+           [
+             0.0,
+             0.0,
+             0
+           ],
+           [
+             60.0,
+             0.66,
+             0
+           ],
+           [
+             180.0,
+             0.647,
+             0
+           ],
+           [
+             300.0,
+             0.762,
+             0
+           ],
+           [
+             600.0,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

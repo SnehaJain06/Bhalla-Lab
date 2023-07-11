@@ -1,0 +1,95 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 20052014,
+            "authors": "Jason Schapansky, Marc Morissette, Gary Odero",
+            "journal": "J Physiol Pharmacol ",
+            "year": 2009,
+            "figure": "Figure 1A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "cellType": "Fetal hippocampal brain cells",
+        "notes": "Long-term incubation of neurons with neuregulin B1, NRGB1 increased glutamate-induced cytoplasmic calcium"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Glu",
+            "data": [
+                [
+                    0.1,
+                    100
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entities": [
+            "Ca"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 20.0,
+            "entities": [
+                "Ca"
+            ],
+            "dose": 0,
+            "sampling": "presetTime"
+        },
+        "data": [
+           [
+             0.0,
+             0.0,
+             0
+           ],
+           [
+             5.0,
+             0.979,
+             0
+           ],
+           [
+             20.0,
+             1.00,
+             0
+           ],
+           [
+             40.0,
+             0.938,
+             0
+           ],
+           [
+             60.0,
+             0.887,
+             0
+           ],
+           [
+             80.0,
+             0.847,
+             0
+           ],
+           [
+             100.0,
+             0.826,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

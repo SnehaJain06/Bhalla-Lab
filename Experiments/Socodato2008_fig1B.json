@@ -1,0 +1,86 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 19012740,
+            "authors": "Renato Esteves da Silva Socodato, Cristiane Rosa Magalhães, Roberto Paes-de-Carvalho",
+            "journal": "J Neurochem",
+            "year": 2008,
+            "figure": "Figure 1A"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Leghorn Chicken",
+        "cellType": "Retinal neuron cells",
+        "notes": "Glutamate production of CREB (cAMP) phosphorylation"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Glu",
+            "data": [
+                [
+                    0.1,
+                    250
+                ]
+           ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 3600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "pCREB"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 900,
+            "entities": [
+                "pCREB"
+            ],
+            "dose": 0.0,
+            "sampling": "presetTime"
+        },
+        "data": [
+           [
+             120.0,
+             0.666,
+             0
+           ],
+           [
+             300.0,
+             0.980,
+             0
+           ],
+           [
+             900.0,
+             1.0,
+             0
+           ],
+           [
+             1800.0,
+             0.383,
+             0
+           ],
+           [
+             3600.0,
+             0.155,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 20181594,
+            "authors": "Conrad C. Alano, Philippe Garnier, Weihai Ying",
+            "journal": "J Neurosci",
+            "year": 2010,
+            "figure": "Figure 3B"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Human",
+        "cellType": "Astrocytes cells",
+        "notes": "Effects of NMDA on PARP-1-induced neuronal death"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "NMDA"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "PAR_pol_par"
+        ],
+        "field": "conc",
+        "normalization": {
+            "entities": [
+                "PAR_pol_par"
+            ],
+            "dose": 100.0,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.0,
+             0.11,
+             0
+           ],
+           [
+             50.0,
+             0.66,
+             0
+           ],
+           [
+             100.0,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 30322141,
+            "authors": "Méry Marimoutou, Danielle A. Springer, Chengyu Liu",
+            "journal": "Antioxidants",
+            "year": 2018,
+            "figure": "Figure 13"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Mice",
+        "cellType": "Neuron",
+        "notes": "Activation of CaMKII from CaM stimulus"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "CaM"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "CaMKII_thr286_p_CaMpar"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 600,
+            "entities": [
+                "CaMKII_thr286_p_CaMpar"
+            ],
+            "dose": 1.0,
+            "sampling": "dose"
+        },
+        "data": [
+           [
+             0.001,
+             0.0,
+             0
+           ],
+           [
+             0.01,
+             0.0413,
+             0
+           ],
+           [
+             0.1,
+             0.737,
+             0
+           ],
+           [
+             1.0,
+             1.00,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

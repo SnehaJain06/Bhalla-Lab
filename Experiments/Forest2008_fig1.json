@@ -1,0 +1,83 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 18795794,
+            "authors": "Amelie Forest, Matthew T. Swulius, Joyce K. Y. Tse",
+            "journal": "Biochemistry",
+            "year": 2008,
+            "figure": "Figure 1"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "E.coli",
+        "cellType": "Cell-line",
+        "notes": "Binding of CaM to CaMKII. Binding curves produced by adding increasing concentrations of CaMKII. The fraction of CaM bound is plotted against the concentration of free CaMKII in the absence of ADP."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "CaMKII"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 60,
+        "quantityUnits": "ratio",
+        "entities": [
+            "CaMKII_CaM"
+        ],
+        "field": "conc",
+        "normalization": {
+            "entities": [
+                "CaMKII_CaM"
+            ],
+            "dose": 1.0,
+            "sampling": "dose"
+        },
+        "display": {
+        "useXlog": true,
+        "useYlog": false
+        },
+        "data": [
+           [
+             0.001,
+             0.0,
+             0
+           ],
+           [
+             0.01,
+             0.02,
+             0
+           ],
+           [
+             0.05,
+             0.27,
+             0
+           ],
+           [
+             0.1,
+             0.89,
+             0
+           ],
+           [
+             1.0,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

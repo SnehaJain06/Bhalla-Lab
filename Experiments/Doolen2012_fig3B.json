@@ -1,0 +1,89 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 22839304,
+            "authors": "Suzanne Doolen, Camille B Blake, Bret N Smith, and Bradley K Taylor",
+            "journal": "Molecular Pain",
+            "year": 2012,
+            "figure": "Figure 3B"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Mice",
+        "cellType": "Dorsal horn neuron",
+        "notes": "Calcium responses elicited by glutamate"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "Glu"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entities": [
+            "Ca"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 600,
+            "entities": [
+                "Ca"
+            ],
+            "dose": 1000.0,
+            "sampling": "dose"
+        },
+        "display": {
+        "useXlog": true,
+        "useYlog": false
+        },
+        "data": [
+           [
+             0.1,
+             0.05,
+             0
+           ],
+           [
+             30.0,
+             0.29,
+             0
+           ],
+           [
+             100.0,
+             0.33,
+             0
+           ],
+           [
+             300.0,
+             0.51,
+             0
+           ],
+           [
+             1000.0,
+             0.81,
+             0
+           ],
+           [
+             3000.0,
+             1.0,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+    "Metadata": {
+        "transcriber": "Sneha Jain",
+        "organization": "National Centre for Biological Sciences",
+        "email": "sneha.jain@students.iiserpune.ac.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 24651445,
+            "authors": "Takashi Fujiwara, Shigeyuki Kanazawa, Ryoko Ichibori",
+            "journal": "PLoS One ",
+            "year": 2014,
+            "figure": "Figure 3D"
+        },
+        "testModel": "/home/snehajain/projectwork/Internship/Models/NOS.json",
+        "testMap": "/home/snehajain/projectwork/Internship/Map/NOS_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Human",
+        "cellType": "Fibroblast cells",
+        "notes": "Effects of L Arginine stimulation on activities of pCREB (cAMP Response Element-Binding Protein) "
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": "LAr",
+            "data": [
+                [
+                    0.01,
+                    6000
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entities": [
+            "pCREB"
+        ],
+        "field": "conc",
+        "normalization": {
+            "time": 1800.0,
+            "entities": [
+                "pCREB"
+            ],
+            "dose": 0.0,
+            "sampling": "presetTime"
+        },
+        "data": [
+           [
+             0.0,
+             0.259,
+             0
+           ],
+           [
+             300.0,
+             0.625,
+             0
+           ],
+           [
+             900.0,
+             0.592,
+             0
+           ],
+           [
+             1800.0,
+             1.00,
+             0
+           ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            "all"
+        ]
+  }
+}
